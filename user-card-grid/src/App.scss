@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top right,#2fd296, #cde8d5)
+}
+
+
+.App {
+  // display: flex;
+  // flex-direction:column;
+  // align-items: center;
+  // // min-height: 100vh;
+  // padding: 2rem;
+
+  nav {
+    background-color: #131010f8;
+    color: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem;
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-left: 45%;
+    }
+  }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 1.2rem;
+    color: #888;
+  }
+
+  .user-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    padding: 3rem;
+
+    .user-card {
+      background-color: #f0f0f7d6;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 10%;
+      border-color: black;
+      border-style: groove;
+
+      img {
+        width: 100%;
+        max-height: 150px;
+        object-fit: unset;
+        border-radius: 10%;
+        margin-bottom: 0.5rem;
+        border-style: dashed;
+      }
+
+      p {
+        font-size: larger;
+      }
+    }
+  }
+}
